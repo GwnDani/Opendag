@@ -8,19 +8,23 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="img/curio-logo.png" alt="Curio Logo">
-            <h1>Welkom bij Curio</h1>
+        <div class="container">
+            <div class="logo fade-in">
+                <img src="img/overig/curio-02-wit-logo-rgb.png" alt="Curio Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li class="fade-in"><a href="index.html">Home</a></li>
+                    <li class="fade-in"><a href="docent.html">Docent</a></li>
+                    <li class="fade-in"><a href="rooster.html">Rooster</a></li>
+                    <li class="fade-in"><a href="vakken.html">Vakken</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="docent.html">Docent</a></li>
-                <li><a href="rooster.html">Rooster</a></li>
-                <li><a href="vakken.html">Vakken</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <div class="blue-line"></div> <!-- Toegevoegde blauwe lijn -->
+
     <main>
         <section>
             <h2>Onze Missie</h2>
@@ -31,8 +35,18 @@
             <p>We bieden een breed scala aan opleidingen en cursussen, ondersteund door ervaren docenten en moderne faciliteiten.</p>
         </section>
     </main>
+    
     <footer>
         <p>&copy; 2024 Curio. Alle rechten voorbehouden.</p>
     </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((element) => {
+                element.style.opacity = 1; // Maak ze zichtbaar
+            });
+        });
+    </script>
 </body>
 </html>

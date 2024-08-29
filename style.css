@@ -1,60 +1,84 @@
 /* Algemene stijlen */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif; /* Arial als fallback */
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* Animatie voor fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Standaardinstellingen voor de fade-in */
+.fade-in {
+    opacity: 0; /* Begin met een onzichtbare toestand */
+    animation: fadeIn 1s forwards; /* Fade-in effect over 1 seconde */
+}
+
 /* Header */
 header {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #e0006d; /* Gebruik een kleur die overeenkomt met de afbeelding */
+    padding: 20px 40px;
 }
 
-.logo-container {
+.container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-.logo-container img {
-    height: 60px;
-    margin-right: 15px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
+/* Logo */
+.logo img {
+    height: 50px;
 }
 
 /* Navigatiebalk */
 nav ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
     padding: 0;
-    margin: 15px 0;
+    font-family: 'Montserrat', sans-serif; /* Specifiek lettertype voor de navigatie */
+    font-weight: bold; /* Vetgedrukte tekst zoals in de afbeelding */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px; /* Pas de tekstgrootte aan naar wens */
+    letter-spacing: 0.05em; /* Iets meer ruimte tussen de letters */
+    text-transform: uppercase; /* Alle tekst in hoofdletters */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Blauwe lijn tussen header en H2 */
+.blue-line {
+    background-color: #003366; /* Blauwe kleur voor de lijn */
+    height: 3px; /* Hoogte van de lijn */
+    width: 100%; /* Maak de lijn breedte 100% van het scherm */
+    margin: 0; /* Geen marge voor een strakke aansluiting */
+    position: relative; /* Zorgt ervoor dat het niet verschuift */
+    top: 0; /* Plaats het bovenaan het element */
+}
+
 /* Main content */
 main {
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 main h2 {
