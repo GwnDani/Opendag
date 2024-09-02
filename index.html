@@ -1,52 +1,147 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curio Homepagina</title>
+    <title>Curio Open Dag</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <div class="container">
-            <div class="logo fade-in">
-                <img src="img/overig/curio-02-wit-logo-rgb.png" alt="Curio Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li class="fade-in"><a href="index.html">Home</a></li>
-                    <li class="fade-in"><a href="docent.html">Docent</a></li>
-                    <li class="fade-in"><a href="rooster.html">Rooster</a></li>
-                    <li class="fade-in"><a href="vakken.html">Vakken</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="img/overig/curio-03-geel-logo-rgb.png" alt="Curio Open Dag Logo">
         </div>
-    </header>
-
-    <div class="blue-line"></div> <!-- Toegevoegde blauwe lijn -->
-
-    <main>
-        <section>
-            <h2>Onze Missie</h2>
-            <p>Bij Curio streven we ernaar om de beste onderwijsomgeving te bieden voor onze studenten, met een focus op innovatie en persoonlijke ontwikkeling.</p>
-        </section>
-        <section>
-            <h2>Wat We Bieden</h2>
-            <p>We bieden een breed scala aan opleidingen en cursussen, ondersteund door ervaren docenten en moderne faciliteiten.</p>
-        </section>
-    </main>
+        <div class="bx bx-menu" id="menu-icon"></div>
     
-    <footer>
-        <p>&copy; 2024 Curio. Alle rechten voorbehouden.</p>
-    </footer>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#vakken">Vakken</a></li>
+            <li><a href="#docenten">Docenten</a></li>
+            <li><a href="#rooster">Rooster</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Dark Mode -->
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    
 
-    <script>
-        window.addEventListener('load', function() {
-            const elements = document.querySelectorAll('.fade-in');
-            elements.forEach((element) => {
-                element.style.opacity = 1; // Maak ze zichtbaar
-            });
-        });
-    </script>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Curio Open Dag</h1>
+            <h2>Ontdek onze opleidingen en docenten</h2>
+            <a href="#vakken" class="btn">Bekijk Vakken</a>
+        </div>
+        <div class="home-img">
+            <img src="img/Mbo/beeld succesklas.jpg" alt="Curio Open Dag">
+        </div>
+    </section>
+
+    <!-- Vakken Sectie -->
+    <section class="vakken" id="vakken">
+        <div class="heading">
+            <span>Vakken</span>
+            <h2>Overzicht van Vakken in het Eerste Jaar</h2>
+        </div>
+        <div class="vakken-container">
+            <div class="vak-box">
+                <h3>Inleiding Programmeren</h3>
+                <p>Leer de basisprincipes van programmeren met talen zoals Python en JavaScript.</p>
+            </div>
+            <div class="vak-box">
+                <h3>Webontwikkeling</h3>
+                <p>Begrijp de fundamenten van HTML, CSS en JavaScript voor het creëren van dynamische websites.</p>
+            </div>
+            <div class="vak-box">
+                <h3>Databasebeheer</h3>
+                <p>Introductie tot SQL en NoSQL databases, gegevensmodellering en databaseontwerp.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Docenten Sectie -->
+    <section class="docenten" id="docenten">
+        <div class="heading">
+            <span>Docenten</span>
+            <h2>Maak kennis met onze docenten</h2>
+        </div>
+        <div class="docenten-container">
+            <!-- Docent 1 -->
+            <div class="docent-box">
+                <img src="https://via.placeholder.com/150" alt="Docent 1">
+                <h3>Jan Jansen</h3>
+                <p>Docent Inleiding Programmeren</p>
+            </div>
+            <!-- Docent 2 -->
+            <div class="docent-box">
+                <img src="https://via.placeholder.com/150" alt="Docent 2">
+                <h3>Petra de Vries</h3>
+                <p>Docent Webontwikkeling</p>
+            </div>
+            <!-- Docent 3 -->
+            <div class="docent-box">
+                <img src="https://via.placeholder.com/150" alt="Docent 3">
+                <h3>Mark van Leeuwen</h3>
+                <p>Docent Databasebeheer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooster Sectie -->
+    <section class="rooster" id="rooster">
+        <div class="heading">
+            <span>Rooster</span>
+            <h2>Typisch Rooster voor Eerstejaars</h2>
+        </div>
+        <p>Een eerstejaarsrooster bevat een combinatie van colleges, praktijklessen en groepswerk. De lessen vinden meestal plaats van 9.00 tot 16.00 uur, met pauzes tussendoor. Studenten worden verwacht actief deel te nemen aan zowel individuele als teamopdrachten.</p>
+    </section>
+
+    <!-- Contact Sectie -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>Curio Open Dag</h3>
+            <span>Neem contact met ons op</span>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Belangrijke Links</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#vakken">Vakken</a></li>
+            <li><a href="#docenten">Docenten</a></li>
+            <li><a href="#rooster">Rooster</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Snelle Links</h3>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#terms">Terms Of Use</a></li>
+        </div>
+        <div class="contact-box address">
+            <h3>Contact</h3>
+            <i class='bx bxs-map'><span>005, Schoolstraat, Breda, Nederland</span></i>
+            <i class='bx bxs-phone'><span>+31 76 123 4567</span></i>
+            <i class='bx bxs-envelope'><span>info@curio.nl</span></i>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>© 2024 Curio Open Dag. Alle rechten voorbehouden.</p>
+    </div>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
