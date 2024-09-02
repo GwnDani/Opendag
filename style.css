@@ -29,7 +29,7 @@
 }
 
 .logo img {
-  width: 150px; /* Pas de breedte aan zoals nodig */
+  width: 115px; /* Pas de breedte aan zoals nodig */
   height: auto; /* Houd de hoogte proportioneel */
   display: block;
 }
@@ -128,7 +128,7 @@ header {
 }
 
 .btn:hover {
-  background: #ffa400;
+  background: #FFCC00;
 }
 
 .about {
@@ -227,7 +227,7 @@ header {
 }
 
 .box .bx:hover {
-  background: #ffa400;
+  background: #FFCC00;
 }
 
 .servives-container {
@@ -378,16 +378,34 @@ header {
     margin-top: 20px; /* Optionele marge boven de container */
 }
 
+/* Algemene stijl voor docenten-boxen */
 .docent-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 200px;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  background-color: #f4f4f4; /* Lichtgrijze achtergrondkleur */
+  border-radius: 10px;
+}
+
+/* Styles voor dark mode */
+body.active .docent-box {
+  background-color: #2a2a2a; /* Donkere achtergrondkleur voor dark mode */
+  color: var(--dark-text-color); /* Tekstkleur voor dark mode */
+}
+
+/* Algemene stijl voor teachers-container */
+.teachers-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Rest van je bestaande CSS blijft hier ongewijzigd */
+
   
   .docent-box img {
     width: 150px; /* Zorg ervoor dat breedte en hoogte gelijk zijn */
@@ -440,6 +458,14 @@ body.active .teacher {
     margin-top: 0; /* Verwijder de standaard bovenmarge van de paragraaf */
   }
   
+  .rooster-img {
+    width: 90%; /* Verklein de afbeelding tot 90% van de breedte van de container */
+    max-width: 800px; /* Zorg ervoor dat de afbeelding niet breder wordt dan 800px */
+    height: auto; /* Houd de hoogte in verhouding tot de breedte */
+    margin: 0 auto; /* Center de afbeelding horizontaal in de sectie */
+    display: block; /* Zorg ervoor dat de afbeelding als een blok wordt weergegeven */
+  }
+
   @media (max-width: 921px) {
     header {
       padding: 14px 41px;
