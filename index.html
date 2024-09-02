@@ -9,6 +9,29 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Toegevoegde CSS voor de docenten sectie -->
+    <style>
+        .docenten-container {
+            display: flex; /* Zorgt voor horizontale uitlijning van de docent-boxen */
+            gap: 2rem; /* Voegt ruimte toe tussen de docent-boxen */
+            flex-wrap: wrap; /* Laat de items doorlopen naar de volgende regel als er niet genoeg ruimte is */
+            justify-content: center; /* Centreert de items horizontaal */
+            align-items: center; /* Centreert de items verticaal */
+            margin-top: 20px; /* Optionele marge boven de container */
+        }
+
+        .docent-box {
+            display: flex;
+            flex-direction: column; /* Houdt de afbeelding en tekst onder elkaar */
+            align-items: center; /* Centreert de inhoud horizontaal */
+            text-align: center; /* Centreert de tekst in het midden */
+            width: 200px; /* Bepaalde breedte voor consistentie */
+            padding: 10px; /* Ruimte binnen de docent-box */
+            background-color: #f4f4f4; /* Optionele achtergrondkleur voor docent-box */
+            border-radius: 10px; /* Optionele afgeronde hoeken voor een nettere uitstraling */
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -29,7 +52,6 @@
         </ul>
     </header>
     
-
     <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-text">
@@ -73,22 +95,40 @@
         <div class="docenten-container">
             <!-- Docent 1 -->
             <div class="docent-box">
-                <img src="https://via.placeholder.com/150" alt="Docent 1">
-                <h3>Jan Jansen</h3>
-                <p>Docent Inleiding Programmeren</p>
+                <img src="img/overig/Bart.jpeg" alt="Docent 1">
+                <h3>Bart Kouwenberg</h3>
+                <p>Docent WEB</p>
             </div>
             <!-- Docent 2 -->
             <div class="docent-box">
-                <img src="https://via.placeholder.com/150" alt="Docent 2">
-                <h3>Petra de Vries</h3>
-                <p>Docent Webontwikkeling</p>
+                <img src="img/overig/Joost.jpg" alt="Docent 1">
+                <h3>Joost Ambagts</h3>
+                <p>Docent PRA</p>
             </div>
             <!-- Docent 3 -->
             <div class="docent-box">
-                <img src="https://via.placeholder.com/150" alt="Docent 3">
-                <h3>Mark van Leeuwen</h3>
-                <p>Docent Databasebeheer</p>
+                <img src="img/overig/marc.jpeg" alt="Docent 1">
+                <h3>Marc Ridders</h3>
+                <p>Docent NATIVE</p>
             </div>
+            <!-- Docent 4 -->
+            <div class="docent-box">
+                <img src="img/overig/Gizem.png" alt="Docent 1">
+                <h3>Gizem Bozkir</h3>
+                <p>Docent Nederlands</p>
+            </div>               
+            <!-- Docent 5 -->
+            <div class="docent-box">
+                <img src="img/overig/Kazar.jpg" alt="Docent 1">
+                <h3>Mustafa Kazar</h3>
+                <p>Docent Engels</p>
+            </div>       
+            <!-- Docent 6 -->
+            <div class="docent-box">
+                <img src="img/overig/Kitty.jpg" alt="Docent 1">
+                <h3>Kitty Martens</h3>
+                <p>Docent PRO</p>
+            </div>                   
         </div>
     </section>
 
