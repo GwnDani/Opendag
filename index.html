@@ -10,28 +10,6 @@
     <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Toegevoegde CSS voor de docenten sectie -->
-    <style>
-        .docenten-container {
-            display: flex; /* Zorgt voor horizontale uitlijning van de docent-boxen */
-            gap: 2rem; /* Voegt ruimte toe tussen de docent-boxen */
-            flex-wrap: wrap; /* Laat de items doorlopen naar de volgende regel als er niet genoeg ruimte is */
-            justify-content: center; /* Centreert de items horizontaal */
-            align-items: center; /* Centreert de items verticaal */
-            margin-top: 20px; /* Optionele marge boven de container */
-        }
-
-        .docent-box {
-            display: flex;
-            flex-direction: column; /* Houdt de afbeelding en tekst onder elkaar */
-            align-items: center; /* Centreert de inhoud horizontaal */
-            text-align: center; /* Centreert de tekst in het midden */
-            width: 200px; /* Bepaalde breedte voor consistentie */
-            padding: 10px; /* Ruimte binnen de docent-box */
-            background-color: #f4f4f4; /* Optionele achtergrondkleur voor docent-box */
-            border-radius: 10px; /* Optionele afgeronde hoeken voor een nettere uitstraling */
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -64,27 +42,53 @@
         </div>
     </section>
 
-    <!-- Vakken Sectie -->
-    <section class="vakken" id="vakken">
-        <div class="heading">
-            <span>Vakken</span>
-            <h2>Overzicht van Vakken in het Eerste Jaar</h2>
+<!-- Vakken Sectie -->
+<section class="vakken" id="vakken">
+    <div class="heading">
+        <span>Vakken</span>
+        <p></p>
+        <h2>Overzicht van Vakken in het Eerste Jaar</h2>
+        <p></p>
+    </div>
+    <div class="vakken-container">
+        <!-- Toegevoegde vakken -->
+        <div class="vak-box">
+            <h3>Native</h3>
+            <p>Bij Native leer je hoe je applicaties ontwikkelt met Python en C#.</p>
         </div>
-        <div class="vakken-container">
-            <div class="vak-box">
-                <h3>Inleiding Programmeren</h3>
-                <p>Leer de basisprincipes van programmeren met talen zoals Python en JavaScript.</p>
-            </div>
-            <div class="vak-box">
-                <h3>Webontwikkeling</h3>
-                <p>Begrijp de fundamenten van HTML, CSS en JavaScript voor het creëren van dynamische websites.</p>
-            </div>
-            <div class="vak-box">
-                <h3>Databasebeheer</h3>
-                <p>Introductie tot SQL en NoSQL databases, gegevensmodellering en databaseontwerp.</p>
-            </div>
+        <div class="vak-box">
+            <h3>Pro</h3>
+            <p>Bij PRO leer je hoe je effectief plant en krijg je inzicht in de werking van het bedrijfsleven.</p>
         </div>
-    </section>
+        <div class="vak-box">
+            <h3>Web</h3>
+            <p>Bij WEB leer je hoe je websites bouwt met HTML, CSS, JavaScript en PHP.</p>
+        </div>
+        <div class="vak-box">
+            <h3>Engels</h3>
+            <p>Bij Engels werk je met opdrachten in gestructureerde taalblokken.</p>
+        </div>
+        <div class="vak-box">
+            <h3>Nederlands</h3>
+            <p>Bij Nederlands werk je met opdrachten in gestructureerde taalblokken.</p>
+        </div>
+        <div class="vak-box">
+            <h3>Pra</h3>
+            <p>Bij PRA werk je samen met medestudenten aan opdrachten die je uiteindelijk inlevert.</p>
+        </div>
+        <div class="vak-box">
+            <h3>Algoritme</h3>
+            <p>Leer over algoritmes en datastructuren, en hoe je deze kunt toepassen om efficiënte oplossingen voor problemen te ontwikkelen.</p>
+        </div>
+        <div class="vak-box">
+            <h3>DIV</h3>
+            <p>Bij DIV maak je opdrachten die aansluiten bij het werk dat je later wilt doen.</p>
+        </div>
+    </div>
+</section>
+
+
+
 
     <!-- Docenten Sectie -->
     <section class="docenten" id="docenten">
