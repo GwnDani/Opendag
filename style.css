@@ -540,7 +540,25 @@ body.active .teacher {
       align-items: center;
     }
   }
-  
+  .blok-ab-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.blok-img {
+    max-width: 54%; 
+    height: auto;
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
   @media (max-width: 515px) {
     .connect {
       flex-direction: column;
